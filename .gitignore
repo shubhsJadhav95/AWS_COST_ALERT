@@ -22,4 +22,3 @@ node_modules
 target/
 
 # Spring Boot config (your case)
-aws-alert/src/main/resources/application.properties
