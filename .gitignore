@@ -16,4 +16,10 @@ dist/
 .env
 
 node_modules
-node_modules/*
+
+
+# Maven
+target/
+
+# Spring Boot config (your case)
+aws-alert/src/main/resources/application.properties

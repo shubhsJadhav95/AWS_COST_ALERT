@@ -107,7 +107,7 @@ function Home() {
 
       {/* Footer */}
       <footer className="footer">
-        <p>Developed by Team CostSpike • AWS SNS Cost Monitoring Solution</p>
+        <p>Developed by Shubham Jadhav • COPYRIGHT ISSUED</p>
       </footer>
     </div>
   );
