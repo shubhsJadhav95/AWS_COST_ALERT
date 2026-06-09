@@ -17,4 +17,4 @@ spec:
       - name: costspike-frontend-deploy
         image: shubhsjadhav95/costspike-frontend:v1
         ports:
-        - containerPort: 80
+        - containerPort: 8080

@@ -17,6 +17,11 @@ public class FileController {
         this.s3Service = s3Service;
     }
 
+    @GetMapping("/health")
+    public ResponseEntity<String> healthCheck() {
+        return ResponseEntity.ok("Backend is healthy");
+    }
+
     @PostMapping("/upload")
     public ResponseEntity<?> uploadCSV(@RequestParam("file") MultipartFile file) {
 
