@@ -1,0 +1,40 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: mainlb
+  namespace: costspike
+  annotations:
+    alb.ingress.kubernetes.io/scheme: internet-facing
+    alb.ingress.kubernetes.io/target-type: ip
+
+    # Listen on HTTP only (you can add HTTPS later)
+    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}]'
+
+    # Optional but recommended: better health check for backend
+    alb.ingress.kubernetes.io/healthcheck-path: /
+
+spec:
+  ingressClassName: alb
+
+  rules:
+    - host: costspike.devcloudzone.store
+      http:
+        paths:
+
+          # BACKEND (Spring Boot / API)
+          - path: /api
+            pathType: Prefix
+            backend:
+              service:
+                name: api
+                port:
+                  number: 8080
+
+          # FRONTEND (React / Angular)
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: frontend-service
+                port:
+                  number: 80
