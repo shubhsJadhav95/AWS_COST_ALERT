@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: frontend
+  name: frontend-deployment
   namespace: costspike
 spec:
   replicas: 2
@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: costspike-frontend-deploy
-        image: shubhsjadhav95/costspike-frontend:v1
+        image: shubhsjadhav95/costspike-frontend:v4
         ports:
         - containerPort: 8080
