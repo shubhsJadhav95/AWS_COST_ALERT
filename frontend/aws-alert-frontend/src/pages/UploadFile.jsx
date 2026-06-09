@@ -49,13 +49,11 @@ const UploadFile = () => {
       const formData = new FormData();
       formData.append("file", fileRef.current, fileRef.current.name);
 
-      const response = await fetch(
-        "http://localhost:8080/api/files/upload",
-        {
+     // const apiBaseUrl = import.meta.env.VITE_API_URL || "https://costspike.devcloudzone.store";
+        const response = await fetch("/api/files/upload", {
           method: "POST",
           body: formData,
-        }
-      );
+        });
 
       const text = await response.text();
 
