@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: costspike-backend-deploy
-        image: shubhsjadhav95/costspike-backend:v3
+        image: shubhsjadhav95/costspike-backend:v4
         ports:
         - containerPort: 8080
         env:
