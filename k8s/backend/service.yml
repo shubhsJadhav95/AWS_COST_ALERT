@@ -5,7 +5,7 @@ metadata:
   namespace: costspike
 spec:
   selector:
-    app: backend-service
+    app: backend
   ports:
     - protocol: TCP
       port: 80
