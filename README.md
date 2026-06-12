@@ -3,7 +3,7 @@ A serverless system that automatically monitors AWS billing CSV files, detects c
 ---
 ## Architecture Diagram
 
-![Architecture Diagram](output/diagram-export-12-06-2026-20_31_35.png)
+![Architecture Diagram](output/design.png)
 ## 🔍 How It Works (Simple Words)
 Whenever a new billing CSV file is uploaded to your S3 bucket, the following happens automatically:
 ```
