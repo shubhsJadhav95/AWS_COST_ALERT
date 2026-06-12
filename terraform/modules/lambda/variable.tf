@@ -12,3 +12,14 @@ variable "policy_name" {
   type    = string
   default = "default_policy_name"
 }
+
+variable "layer_arn" {
+  type        = string
+  description = "ARN of the Lambda layer to attach"
+}
+
+variable "sns_topic_arn" {
+  type        = string
+  description = "ARN of the SNS topic for cost alerts"
+}
+

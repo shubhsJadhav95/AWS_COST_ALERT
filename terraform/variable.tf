@@ -5,19 +5,35 @@ variable "aws_region" {
 
 variable "bucket_name" {
   type = string
-  default = "shubhsJadhav95/aws-alert-bucket"
 }
 
 variable "function_name" {
-    type = string
-    default = "lambda-alert"
-  
+  type = string
+  default = "lambda-alert"
 }
-
 
 variable "role_name" {
-    type = string
-    default = "lambda-role"
-  
+  type = string
+  default = "lambda-role"
 }
 
+variable "environment" {
+  type    = string
+  default = "dev"
+}
+
+variable "email_endpoints" {
+  type = list(string)
+}
+
+variable "policy_name" {
+  type = string
+}
+
+variable "layer_name" {
+  type = string
+}
+
+variable "topic_name" {
+  type = string
+}
