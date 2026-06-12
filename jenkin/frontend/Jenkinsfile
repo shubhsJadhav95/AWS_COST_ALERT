@@ -81,7 +81,7 @@ stages {
         steps {
             dir("${FRONTEND_DIR}") {
                 sh '''
-                npm install
+                npm install  
                 '''
             }
         }
