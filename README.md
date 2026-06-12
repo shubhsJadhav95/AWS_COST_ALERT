@@ -1,7 +1,9 @@
 # 📊 AWS Cost Alert System
 A serverless system that automatically monitors AWS billing CSV files, detects cost spikes, and alerts you via email.
 ---
-![Architecture Diagram](output\diagram-export-12-06-2026-20_31_35.pngdiagram-export-12-06-2026-20_31_35.png)
+## Architecture Diagram
+
+![Architecture Diagram](output/diagram-export-12-06-2026-20_31_35.png)
 ## 🔍 How It Works (Simple Words)
 Whenever a new billing CSV file is uploaded to your S3 bucket, the following happens automatically:
 ```
