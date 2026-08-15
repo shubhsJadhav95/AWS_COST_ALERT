@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: costspike-frontend-deploy
-        image: shubhsjadhav95/costspike-frontend:v7
+        image: 431618680847.dkr.ecr.us-east-1.amazonaws.com/costspike-frontend:5
         ports:
         - containerPort: 8080
