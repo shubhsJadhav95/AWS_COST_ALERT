@@ -14,22 +14,18 @@ spec:
         app: backend
     spec:
       containers:
-      - name: costspike-backend-deploy
-<<<<<<< HEAD
-        image: 431618680847.dkr.ecr.us-east-1.amazonaws.com/costspike-backend:latest
-=======
-        image: 347026173735.dkr.ecr.us-east-1.amazonaws.com/costspike-backend:15
->>>>>>> 49683a48882ed388784dd19ab59a0654f0a7dd70
-        ports:
-        - containerPort: 8080
-        env:
-        - name: AWS_ACCESS_KEY
-          valueFrom:
-            secretKeyRef:
-              name: aws-credentials
-              key: access-key
-        - name: AWS_SECRET_KEY
-          valueFrom:
-            secretKeyRef:
-              name: aws-credentials
-              key: secret-key
+        - name: costspike-backend-deploy
+          image: 431618680847.dkr.ecr.us-east-1.amazonaws.com/costspike-backend:latest
+          ports:
+            - containerPort: 8080
+          env:
+            - name: AWS_ACCESS_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: aws-credentials
+                  key: access-key
+            - name: AWS_SECRET_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: aws-credentials
+                  key: secret-key
