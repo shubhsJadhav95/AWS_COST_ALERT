@@ -39,3 +39,4 @@ target/
 **/.terraformrc
 **/terraform.rc
 **/lambda_function_payload.zip
+k8s/backend/secret.yml
