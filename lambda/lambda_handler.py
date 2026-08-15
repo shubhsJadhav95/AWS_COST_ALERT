@@ -9,7 +9,7 @@ from datetime import datetime
 s3 = boto3.client("s3")
 sns = boto3.client("sns", region_name="us-east-1")
 
-SNS_TOPIC_ARN = os.environ.get('SNS_TOPIC_ARN', 'arn:aws:sns:us-east-1:347026173735:aws-alert')
+SNS_TOPIC_ARN = os.environ.get('SNS_TOPIC_ARN', 'arn:aws:sns:us-east-1:431618680847:aws-alert')
 
 DATE_FORMATS = [
     "%Y-%m-%d",
