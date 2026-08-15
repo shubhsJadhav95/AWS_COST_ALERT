@@ -6,7 +6,11 @@ metadata:
   annotations:
     alb.ingress.kubernetes.io/group.name: costspike-app-lb
     alb.ingress.kubernetes.io/scheme: internet-facing
+<<<<<<< HEAD
     alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:431618680847:certificate/9a9dce81-a101-4409-a577-483639b716a6
+=======
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:347026173735:certificate/6c33d96f-ba4a-4cdb-ac0b-d431a1a52439
+>>>>>>> 49683a48882ed388784dd19ab59a0654f0a7dd70
     alb.ingress.kubernetes.io/target-type: ip
     alb.ingress.kubernetes.io/backend-protocol: HTTP
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP":80}, {"HTTPS":443}]'

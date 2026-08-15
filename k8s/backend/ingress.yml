@@ -7,12 +7,20 @@ metadata:
     alb.ingress.kubernetes.io/group.name: costspike-app-lb
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
+<<<<<<< HEAD
     alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:431618680847:certificate/9a9dce81-a101-4409-a577-483639b716a6
+=======
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:347026173735:certificate/6c33d96f-ba4a-4cdb-ac0b-d431a1a52439
+>>>>>>> 49683a48882ed388784dd19ab59a0654f0a7dd70
     alb.ingress.kubernetes.io/healthcheck-path: /api/files/health # important
     # FIXED: correct ALB attribute format
     alb.ingress.kubernetes.io/load-balancer-attributes: idle_timeout.timeout_seconds=300
     alb.ingress.kubernetes.io/success-codes: '200'
+<<<<<<< HEAD
     alb.ingress.kubernetes.io/backend-protocol: HTTPcd ..
+=======
+    alb.ingress.kubernetes.io/backend-protocol: HTTP
+>>>>>>> 49683a48882ed388784dd19ab59a0654f0a7dd70
 
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP":80}, {"HTTPS":443}]'
     alb.ingress.kubernetes.io/ssl-redirect: '443'
